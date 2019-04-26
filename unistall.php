@@ -1,5 +1,5 @@
 <?php
 
-unlink('/root/shell.sh');
-unlink('/root/conf.php');
-unlink('/root/unistall.php');
+unlink( __DIR__ . '/shell.sh');
+unlink( __DIR__ . '/conf.php');
+unlink( __DIR__ . '/unistall.php');
