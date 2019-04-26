@@ -2,7 +2,7 @@
 
 apt update
 apt upgrade -y
-apt install nginx -y
+apt install nginx nano zip -y
 apt install mysql-server -y
 apt install php-fpm php-mysql -y
 php conf.php
