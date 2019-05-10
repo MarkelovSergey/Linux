@@ -11,8 +11,8 @@ systemctl restart php7.2-fpm
 mv ./wordpress/default /etc/nginx/sites-available/default
 systemctl restart nginx
 
-wget https://wordpress.org/latest.tar.gz
-tar xzvf latest.tar.gz
+wget https://ru.wordpress.org/latest-ru_RU.tar.gz
+tar xzvf latest-ru_RU.tar.gz
 
 rm -r /var/www/html/
 mv wordpress html
