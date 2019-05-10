@@ -17,3 +17,5 @@ tar xzvf latest-ru_RU.tar.gz
 rm -r /var/www/html/
 mv wordpress html
 mv html /var/www
+
+chown -R www-data:www-data /var/www/html
