@@ -5,7 +5,7 @@ mysql -e "CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unic
 mysql -e "GRANT ALL PRIVILEGES ON wordpress . * TO 'wordpressuser'@'localhost';"
 mysql -e "FLUSH PRIVILEGES;"
 
-apt install php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip
+apt install php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip -y
 systemctl restart php7.2-fpm
 
 mv ./wordpress/default /etc/nginx/sites-available/default
