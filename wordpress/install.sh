@@ -36,4 +36,10 @@ su - wpuser -c "wp config create --dbname=wordpress --dbuser=wordpressuser --dbp
 su - wpuser -c "wp core install --url=example.com --title=Example --admin_user=root --admin_password=4680 --admin_email=kerzhakov.08@mail.ru"
 su - wpuser -c "wp plugin uninstall hello akismet"
 
+apt-get install software-properties-common
+add-apt-repository universe
+add-apt-repository ppa:certbot/certbot
+apt-get update
+apt-get install certbot python-certbot-nginx 
+
 passwd wpuser
