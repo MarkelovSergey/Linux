@@ -7,4 +7,4 @@ apt install mysql-server -y
 apt install php7.2-fpm php7.2-mysql -y
 php conf.php
 systemctl restart php7.2-fpm.service
-php unistall.php
+#php unistall.php
