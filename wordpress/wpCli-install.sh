@@ -8,7 +8,7 @@ mysql -e "FLUSH PRIVILEGES;"
 apt install php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip -y
 systemctl restart php7.2-fpm
 
-mv ./wordpress/default /etc/nginx/sites-available/default
+mv default /etc/nginx/sites-available/default
 systemctl restart nginx
 
 wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
@@ -21,7 +21,7 @@ chown -R wpuser:www-data /var/www
 chown -R wpuser:www-data /var/lib/nginx
 chown -R wpuser:www-data /var/log/nginx
 chown -R wpuser:www-data /var/lib/php/sessions
-php ./wordpress/conf.php
+php conf.php
 
 service php7.2-fpm restart
 service nginx restart
