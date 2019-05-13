@@ -30,8 +30,9 @@ wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar
 mv wp-cli.phar /usr/local/bin/wp
 
-su wpuser
 cd /var/www/html
+su wpuser
 wp core download --locale=ru_RU
+wp config create --dbname=wordpress --dbuser=wordpressuser --dbpass=4680 --locale=ru_RU
 wp core install --url=example.com --title=Example --admin_user=root --admin_password=4680 --admin_email=kerzhakov.08@mail.ru
 
