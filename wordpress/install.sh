@@ -40,6 +40,6 @@ apt-get install software-properties-common
 add-apt-repository universe
 add-apt-repository ppa:certbot/certbot
 apt-get update
-apt-get install certbot python-certbot-nginx 
+apt-get install certbot python-certbot-nginx -y
 
 passwd wpuser
