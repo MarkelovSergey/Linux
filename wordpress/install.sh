@@ -36,4 +36,4 @@ su - wpuser -c "wp config create --dbname=wordpress --dbuser=wordpressuser --dbp
 su - wpuser -c "wp core install --url=example.com --title=Example --admin_user=root --admin_password=4680 --admin_email=kerzhakov.08@mail.ru"
 su - wpuser -c "wp plugin uninstall hello akismet"
 
-passwd wpuser
+#passwd wpuser
