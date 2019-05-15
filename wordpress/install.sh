@@ -21,7 +21,9 @@ chown -R wpuser:www-data /var/www
 chown -R wpuser:www-data /var/lib/nginx
 chown -R wpuser:www-data /var/log/nginx
 chown -R wpuser:www-data /var/lib/php/sessions
-php conf.php
+#php conf.php
+sed -i 's/.*user www-data;.*/user wpuser;/' /etc/nginx/nginx.conf
+sed -i 's/.*user = www-data.*/user = wpuser/' /etc/php/7.2/fpm/pool.d/www.conf
 
 service php7.2-fpm restart
 service nginx restart
