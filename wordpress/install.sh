@@ -6,10 +6,10 @@ mysql -e "GRANT ALL PRIVILEGES ON wordpress . * TO 'wordpressuser'@'localhost';"
 mysql -e "FLUSH PRIVILEGES;"
 
 apt install php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip -y
-#systemctl restart php7.2-fpm
+systemctl restart php7.2-fpm
 
 mv default /etc/nginx/sites-available/default
-#systemctl restart nginx
+systemctl restart nginx
 
 #установка wp-cli
 wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
